@@ -3,11 +3,8 @@ package edu.kis.vh.nursery;
 public class DefaultCountingOutRhymer {
 
 	private static final int FULL_ARRAY = 11;
-
 	private static final int EMPTY_ARRAY_VALUE = -1;
-
 	private static final int NUMBERS_ARRAY_SIZE = 12;
-
 	private int[] NUMBERS = new int[getNumbersArraySize()];
 
 	private int total = getEmptyArrayValue();
