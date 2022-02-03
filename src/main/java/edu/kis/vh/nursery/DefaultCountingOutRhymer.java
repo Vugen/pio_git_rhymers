@@ -8,9 +8,21 @@ public class DefaultCountingOutRhymer {
 
 	private static final int NUMBERS_ARRAY_SIZE = 12;
 
-	private int[] NUMBERS = new int[NUMBERS_ARRAY_SIZE];
+	private int[] NUMBERS = new int[getNumbersArraySize()];
 
-	private int total = EMPTY_ARRAY_VALUE;
+	private int total = getEmptyArrayValue();
+
+	public static int getNumbersArraySize() {
+		return NUMBERS_ARRAY_SIZE;
+	}
+
+	public static int getEmptyArrayValue() {
+		return EMPTY_ARRAY_VALUE;
+	}
+
+	public static int getFullArray() {
+		return FULL_ARRAY;
+	}
 
 	public int getTotal() {
 		return total;
@@ -22,21 +34,21 @@ public class DefaultCountingOutRhymer {
 	}
 
 	public boolean callCheck() {
-			return total == EMPTY_ARRAY_VALUE;
+			return total == getEmptyArrayValue();
 	}
 	public boolean isFull() {
-		return total == FULL_ARRAY;
+		return total == getFullArray();
 	}
 
 	protected int peekABoo() {
 		if (callCheck())
-			return EMPTY_ARRAY_VALUE;
+			return getEmptyArrayValue();
 		return NUMBERS[total];
 	}
 			
 	public int countOut() {
 		if (callCheck())
-			return EMPTY_ARRAY_VALUE;
+			return getEmptyArrayValue();
 		return NUMBERS[total--];
 	}
 
