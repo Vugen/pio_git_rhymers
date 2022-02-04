@@ -6,6 +6,10 @@ public class IntLinkedList {
 	Node last;
 	int i;
 
+	public static int getEmptyArrayReturnCode() {
+		return EMPTY_ARRAY_RETURN_CODE;
+	}
+
 	public void push(int i) {
 		if (last == null)
 			last = new Node(i);
@@ -26,13 +30,13 @@ public class IntLinkedList {
 
 	public int top() {
 		if (isEmpty())
-			return EMPTY_ARRAY_RETURN_CODE;
+			return getEmptyArrayReturnCode();
 		return last.value;
 	}
 
 	public int pop() {
 		if (isEmpty())
-			return EMPTY_ARRAY_RETURN_CODE;
+			return getEmptyArrayReturnCode();
 		int ret = last.value;
 		last = last.prev;
 		return ret;
