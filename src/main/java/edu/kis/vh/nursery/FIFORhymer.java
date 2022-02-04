@@ -1,3 +1,6 @@
+/*
+ Wyliczanka oparta na kolejce FIFO (First in first out)
+ */
 package edu.kis.vh.nursery;
 
 public class FIFORhymer extends DefaultCountingOutRhymer {

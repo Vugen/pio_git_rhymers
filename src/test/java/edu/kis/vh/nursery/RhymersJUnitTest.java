@@ -75,4 +75,14 @@ public class RhymersJUnitTest {
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 	}
 
+	@Test
+	public void testGetTotal(){
+		DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
+
+		final int EMPTY_ARRAY_VALUE = -1;
+		int result = rhymer.getTotal();
+		Assert.assertEquals(EMPTY_ARRAY_VALUE, result);
+
+	}
+
 }
