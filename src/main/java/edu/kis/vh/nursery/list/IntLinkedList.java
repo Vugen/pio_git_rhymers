@@ -1,5 +1,5 @@
 package edu.kis.vh.nursery.list;
-
+//TODO: LinkedList is not used. Make it usefull or safe delete it.
 public class IntLinkedList {
 
 	private static final int EMPTY_ARRAY_RETURN_CODE = -1;
